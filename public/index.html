@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <title>ThanksOn</title>
+  
+  <link rel="stylesheet"  href="styles/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Unity PWA Games">
+  <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+  <meta name="description" content="Unity PWA Games">
+  <meta name="theme-color" content="#000" />
+
+  <script src="UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+
+  
+  <script>var gameInstance = UnityLoader.instantiate("gameContainer", "Build/zpowa.json", {onProgress: UnityProgress});</script>
+</head>
+
+<body>
+
+  <header class="header">
+	Play tanks online
+  </header>
+
+  <div class="main">
+    <div class="webgl-content">
+      <div id="gameContainer"></div>
+    </div>      
+  </div>
+
+
+  <script>        
+    document.getElementById('gameContainer').style.width = window.outerWidth+ "px";
+    document.getElementById('gameContainer').style.height = window.outerHeight + "px";       
+  </script>
+
+</body>
+</html>
+
