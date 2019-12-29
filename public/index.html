@@ -5,8 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <title>ThanksOn</title>
+  <link rel="manifest" href="/manifest.json">
   
-  <link rel="stylesheet"  href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="/styles/style.css">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -26,7 +27,7 @@
 <body>
 
   <header class="header">
-	Play tanks online
+      <button id="butInstall" aria-label="Install" hidden></button>
   </header>
 
   <div class="main">
@@ -36,10 +37,23 @@
   </div>
 
 
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+        .then((reg) => {
+          console.log('Gracias por usar Thanks', reg);
+        });
+      });
+    }
+    </script>
   <script>        
     document.getElementById('gameContainer').style.width = window.outerWidth+ "px";
     document.getElementById('gameContainer').style.height = window.outerHeight + "px";       
   </script>
+
+<script src="scripts/install.js"></script>
 
 </body>
 </html>
