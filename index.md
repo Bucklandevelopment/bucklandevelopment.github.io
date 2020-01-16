@@ -73,6 +73,12 @@
 
 <script src="scripts/install.js"></script-->
 
+
+
+
+<script src="/public/scripts/contact.js"></script>
+
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 
@@ -97,24 +103,7 @@
   firebase.analytics();
 
 
-  function saveToFirebase() {
-    /*var emailObject = {
-        email: email
-    };*/
-
-    let email = document.getElementById("exampleInputEmail1");
-    let suscribe = confirm("Deseas suscribirte a BT con el email" + email);
-
-    suscribe ?
-    firebase.database().ref('subscription-entries').push().set(email)
-        .then(function(snapshot) {
-            success(); // some success method
-        }, function(error) {
-            console.log('error' + error);
-            error(); // some error method
-        }) :
-    alert("Suscripción cancelada")
-}
+  
 </script>
 
 </body>
