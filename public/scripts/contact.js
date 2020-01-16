@@ -9,10 +9,18 @@ function saveToFirebase() {
     suscribe ?
     firebase.database().ref('subscription-entries').push().set(email)
         .then(function(snapshot) {
-            success(); // some success method
+            success(snapshot); // some success method
         }, function(error) {
             console.log('error' + error);
-            error(); // some error method
+            error(error); // some error method
         }) :
     alert("Suscripción cancelada")
+}
+
+function success(snapshot){
+    console.log(snapshot)
+}
+
+function error(error){
+    alert("No has podido suscribirte, por culpa del error:" + error);
 }
