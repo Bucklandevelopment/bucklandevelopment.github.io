@@ -1,3 +1,4 @@
+
 function saveToFirebase() {
     /*var emailObject = {
         email: email

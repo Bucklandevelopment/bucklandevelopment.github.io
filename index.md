@@ -76,7 +76,7 @@
 
 
 
-<script src="/public/scripts/contact.js"></script>
+
 
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -102,7 +102,7 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-
+<script src="/public/scripts/contact.js"></script>
   
 </script>
 
