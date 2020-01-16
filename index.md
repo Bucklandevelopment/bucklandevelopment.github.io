@@ -73,12 +73,6 @@
 
 <script src="scripts/install.js"></script-->
 
-
-
-
-<script src="/public/scripts/contact.js"></script>
-
-
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 
@@ -108,7 +102,7 @@
         email: email
     };*/
 
-    let email = document.getElementById("exampleInputEmail1").value;
+    let email = document.getElementById("exampleInputEmail1");
     let suscribe = confirm("Deseas suscribirte a BT con el email" + email);
 
     suscribe ?
