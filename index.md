@@ -97,7 +97,7 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-  var firebase = firebase.database();  
+  
 </script>
 <script src="/public/scripts/contact.js"></script>
 

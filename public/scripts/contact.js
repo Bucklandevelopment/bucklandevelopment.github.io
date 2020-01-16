@@ -1,3 +1,4 @@
+var firebase = firebase.database();  
 
 function saveToFirebase() {
     /*var emailObject = {
@@ -5,7 +6,7 @@ function saveToFirebase() {
     };*/
 
     let email = document.getElementById("exampleInputEmail1").value;
-    let suscribe = confirm("Deseas suscribirte a BT con el email" + email);
+    let suscribe = confirm("Deseas suscribirte a BT con el email " + email);
 
     suscribe ?
     firebase.database().ref('subscription-entries').push().set(email)
