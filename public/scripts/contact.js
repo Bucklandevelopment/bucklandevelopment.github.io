@@ -1,8 +1,3 @@
-
-
-
-var firebase = firebase.database();  
-
 function saveToFirebase() {
     /*var emailObject = {
         email: email
