@@ -30,6 +30,7 @@
 
   
   <script>var gameInstance = UnityLoader.instantiate("gameContainer", "Build/zpowa.json", {onProgress: UnityProgress});</script-->
+  <script src="/scripts/contact.js"></script>
 </head>
 
 <body>
@@ -40,7 +41,7 @@
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    <button type="button" class="btn btn-primary" onclick="saveToFirebase(email);">Subscribe</button>
+    <button type="button" class="btn btn-primary" onclick="saveToFirebase(email)">Subscribe</button>
   </div>
 
   <!--header class="header">
@@ -73,7 +74,7 @@
 <script src="scripts/install.js"></script-->
 
 
-<script src="/scripts/contact.js"></script>
+
 
 
 
