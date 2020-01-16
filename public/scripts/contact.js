@@ -4,6 +4,7 @@ function saveToFirebase() {
     };*/
 
     let email = document.getElementById("exampleInputEmail1");
+    console.log(email);
     let suscribe = confirm("Deseas suscribirte a BT con el email" + email);
 
     suscribe ?
