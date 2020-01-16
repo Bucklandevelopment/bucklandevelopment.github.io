@@ -30,7 +30,7 @@
 
   
   <script>var gameInstance = UnityLoader.instantiate("gameContainer", "Build/zpowa.json", {onProgress: UnityProgress});</script-->
-  <script src="/scripts/contact.js"></script>
+  <script src="scripts/contact.js"></script>
 </head>
 
 <body>
