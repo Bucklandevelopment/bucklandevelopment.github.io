@@ -3,7 +3,7 @@ function saveToFirebase() {
         email: email
     };*/
 
-    let email = document.getElementById("emailadress").nodeValue
+    let email = document.getElementById("emailaddress").nodeValue;
     let suscribe = confirm("Deseas suscribirte a BT con el email" + email);
 
     suscribe ?
