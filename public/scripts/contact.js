@@ -8,9 +8,9 @@ function saveToFirebase() {
 
     suscribe ?
     firebase.database().ref('subscription-entries').push().set(email)
-        .then(function(snapshot) {
+        .then((snapshot)=> {
             success(snapshot); // some success method
-        }, function(error) {
+        }, (error) => {
             console.log('error' + error);
             error(error); // some error method
         }) :
