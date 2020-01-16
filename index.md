@@ -30,7 +30,7 @@
 
   
   <script>var gameInstance = UnityLoader.instantiate("gameContainer", "Build/zpowa.json", {onProgress: UnityProgress});</script-->
-  <script src="scripts/contact.js"></script>
+  
 </head>
 
 <body>
@@ -76,7 +76,7 @@
 
 
 
-
+<script src="/public/scripts/contact.js"></script>
 
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
