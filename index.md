@@ -74,11 +74,6 @@
 <script src="scripts/install.js"></script-->
 
 
-
-
-
-
-
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 
@@ -102,7 +97,7 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-  
+  var firebase = firebase.database();  
 </script>
 <script src="/public/scripts/contact.js"></script>
 

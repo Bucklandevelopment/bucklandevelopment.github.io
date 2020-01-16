@@ -17,4 +17,3 @@ function saveToFirebase() {
         }) :
     alert("Suscripción cancelada")
 }
-
