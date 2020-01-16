@@ -102,9 +102,9 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-<script src="/public/scripts/contact.js"></script>
   
 </script>
+<script src="/public/scripts/contact.js"></script>
 
 </body>
 </html>
