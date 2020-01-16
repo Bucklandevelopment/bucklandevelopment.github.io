@@ -1,14 +1,19 @@
-function saveToFirebase(email) {
-    var emailObject = {
+function saveToFirebase() {
+    /*var emailObject = {
         email: email
-    };
+    };*/
 
-    firebase.database().ref('subscription-entries').push().set(emailObject)
+    let email = document.getElementById("emailadress").nodeValue
+    let suscribe = confirm("Deseas suscribirte a BT con el email" + email);
+
+    suscribe ?
+    firebase.database().ref('subscription-entries').push().set(email)
         .then(function(snapshot) {
             success(); // some success method
         }, function(error) {
             console.log('error' + error);
             error(); // some error method
-        });
+        }) :
+    alert("Suscripción cancelada")
 }
 
